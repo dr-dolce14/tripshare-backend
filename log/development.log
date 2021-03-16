@@ -1,0 +1,208 @@
+  [1m[35m (218.4ms)[0m  [1m[35mCREATE DATABASE "tripshare_backend_development" ENCODING = 'unicode'[0m
+  [1m[35m (85.4ms)[0m  [1m[35mCREATE DATABASE "tripshare_backend_test" ENCODING = 'unicode'[0m
+  [1m[35m (71.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (106.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (23.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2807629655067748770)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-03-16 20:23:36.646463"], ["updated_at", "2021-03-16 20:23:36.646463"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2807629655067748770)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mSQL (2.6ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "83e6e9510955ef04f606b0339b1f0d53760104f9"], ["created_at", "2021-03-16 20:25:31.980600"], ["updated_at", "2021-03-16 20:25:31.980600"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (16.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-03-16 20:25:32.098078"], ["updated_at", "2021-03-16 20:25:32.098078"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (2.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2021-03-16 20:25:32.103413"], ["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "83e6e9510955ef04f606b0339b1f0d53760104f9"], ["created_at", "2021-03-16 20:25:32.109914"], ["updated_at", "2021-03-16 20:25:32.109914"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2807629655067748770)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2807629655067748770)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE DATABASE "tripshare_backend_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE "tripshare_backend_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2807629655067748770)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2807629655067748770)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE DATABASE "tripshare_backend_development" ENCODING = 'unicode'[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE DATABASE "tripshare_backend_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2807629655067748770)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTrips (20210316203341)
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (15.0ms)[0m  [1m[35mCREATE TABLE "trips" ("id" bigserial primary key, "name" character varying, "location" character varying, "leader" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210316203341"]]
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2807629655067748770)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2807629655067748770)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2807629655067748770)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2807629655067748770)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2807629655067748770)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (4.7ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Caribbean"], ["location", "Distaghil Sar"], ["leader", "Stoneward"], ["created_at", "2021-03-16 21:11:02.961259"], ["updated_at", "2021-03-16 21:11:02.961259"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Indian"], ["location", "Khunyang Chhish"], ["leader", "Willshaper"], ["created_at", "2021-03-16 21:11:02.970189"], ["updated_at", "2021-03-16 21:11:02.970189"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Senegalese"], ["location", "Batura Sar"], ["leader", "Skybreaker"], ["created_at", "2021-03-16 21:11:02.973431"], ["updated_at", "2021-03-16 21:11:02.973431"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "American (New)"], ["location", "Sunanda Devi"], ["leader", "Elsecaller"], ["created_at", "2021-03-16 21:11:02.976722"], ["updated_at", "2021-03-16 21:11:02.976722"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Argentinian"], ["location", "Gasherbrum II"], ["leader", "Bondsmith"], ["created_at", "2021-03-16 21:11:02.979888"], ["updated_at", "2021-03-16 21:11:02.979888"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Chinese"], ["location", "Jengish Chokusu"], ["leader", "Elsecaller"], ["created_at", "2021-03-16 21:11:02.982637"], ["updated_at", "2021-03-16 21:11:02.982637"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Vietnamese"], ["location", "Khartaphu"], ["leader", "Lightweaver"], ["created_at", "2021-03-16 21:11:02.985370"], ["updated_at", "2021-03-16 21:11:02.985370"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "American (Traditional)"], ["location", "Ultar"], ["leader", "Windrunner"], ["created_at", "2021-03-16 21:11:02.988191"], ["updated_at", "2021-03-16 21:11:02.988191"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Burgers"], ["location", "Baltistan Peak"], ["leader", "Elsecaller"], ["created_at", "2021-03-16 21:11:02.991130"], ["updated_at", "2021-03-16 21:11:02.991130"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Pizza"], ["location", "Annapurna I"], ["leader", "Truthwatcher"], ["created_at", "2021-03-16 21:11:02.994141"], ["updated_at", "2021-03-16 21:11:02.994141"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Argentinian"], ["location", "Rakaposhi"], ["leader", "Windrunner"], ["created_at", "2021-03-16 21:11:02.996985"], ["updated_at", "2021-03-16 21:11:02.996985"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.1ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Bar"], ["location", "Mamostong Kangri"], ["leader", "Skybreaker"], ["created_at", "2021-03-16 21:11:02.999788"], ["updated_at", "2021-03-16 21:11:02.999788"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tex Mex"], ["location", "Khunyang Chhish"], ["leader", "Truthwatcher"], ["created_at", "2021-03-16 21:11:03.002542"], ["updated_at", "2021-03-16 21:11:03.002542"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "German"], ["location", "Sunanda Devi"], ["leader", "Skybreaker"], ["created_at", "2021-03-16 21:11:03.005228"], ["updated_at", "2021-03-16 21:11:03.005228"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Desserts"], ["location", "Chogolisa"], ["leader", "Lightweaver"], ["created_at", "2021-03-16 21:11:03.008046"], ["updated_at", "2021-03-16 21:11:03.008046"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tex Mex"], ["location", "Ultar"], ["leader", "Bondsmith"], ["created_at", "2021-03-16 21:11:03.010886"], ["updated_at", "2021-03-16 21:11:03.010886"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Sushi"], ["location", "Kongur Tagh"], ["leader", "Lightweaver"], ["created_at", "2021-03-16 21:11:03.013738"], ["updated_at", "2021-03-16 21:11:03.013738"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Juice & Smoothies"], ["location", "Kumbhakarna"], ["leader", "Stoneward"], ["created_at", "2021-03-16 21:11:03.016531"], ["updated_at", "2021-03-16 21:11:03.016531"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Chinese"], ["location", "Kumbhakarna"], ["leader", "Dustbringer"], ["created_at", "2021-03-16 21:11:03.019371"], ["updated_at", "2021-03-16 21:11:03.019371"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Asian"], ["location", "Skil Brum"], ["leader", "Bondsmith"], ["created_at", "2021-03-16 21:11:03.022230"], ["updated_at", "2021-03-16 21:11:03.022230"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Greek"], ["location", "Lhotse"], ["leader", "Windrunner"], ["created_at", "2021-03-16 21:11:03.025035"], ["updated_at", "2021-03-16 21:11:03.025035"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Japanese"], ["location", "Kanjut Sar"], ["leader", "Edgedancer"], ["created_at", "2021-03-16 21:11:03.027924"], ["updated_at", "2021-03-16 21:11:03.027924"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Juice & Smoothies"], ["location", "Muztagh Tower"], ["leader", "Windrunner"], ["created_at", "2021-03-16 21:11:03.030805"], ["updated_at", "2021-03-16 21:11:03.030805"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Senegalese"], ["location", "Molamenqing"], ["leader", "Willshaper"], ["created_at", "2021-03-16 21:11:03.033960"], ["updated_at", "2021-03-16 21:11:03.033960"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "European"], ["location", "Rimo I"], ["leader", "Bondsmith"], ["created_at", "2021-03-16 21:11:03.037094"], ["updated_at", "2021-03-16 21:11:03.037094"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Burgers"], ["location", "Annapurna Dakshin"], ["leader", "Bondsmith"], ["created_at", "2021-03-16 21:11:03.040249"], ["updated_at", "2021-03-16 21:11:03.040249"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (1.4ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Asian"], ["location", "Lupghar Sar"], ["leader", "Edgedancer"], ["created_at", "2021-03-16 21:11:03.043618"], ["updated_at", "2021-03-16 21:11:03.043618"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Greek"], ["location", "Dhaulagiri I"], ["leader", "Willshaper"], ["created_at", "2021-03-16 21:11:03.047835"], ["updated_at", "2021-03-16 21:11:03.047835"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Comfort Food"], ["location", "Haramosh Peak"], ["leader", "Stoneward"], ["created_at", "2021-03-16 21:11:03.050680"], ["updated_at", "2021-03-16 21:11:03.050680"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Comfort Food"], ["location", "Masherbrum"], ["leader", "Truthwatcher"], ["created_at", "2021-03-16 21:11:03.053555"], ["updated_at", "2021-03-16 21:11:03.053555"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTrip Load (0.4ms)[0m  [1m[34mSELECT "trips".* FROM "trips" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mTrip Destroy (3.5ms)[0m  [1m[31mDELETE FROM "trips"[0m
+  [1m[36mTrip Load (0.6ms)[0m  [1m[34mSELECT "trips".* FROM "trips" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.5ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Italian"], ["location", "Gurla Mandhata"], ["leader", "Windrunner"], ["created_at", "2021-03-16 21:12:13.625354"], ["updated_at", "2021-03-16 21:12:13.625354"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "European"], ["location", "Gasherbrum III"], ["leader", "Skybreaker"], ["created_at", "2021-03-16 21:12:13.630444"], ["updated_at", "2021-03-16 21:12:13.630444"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Chinese"], ["location", "Rakaposhi"], ["leader", "Truthwatcher"], ["created_at", "2021-03-16 21:12:13.634509"], ["updated_at", "2021-03-16 21:12:13.634509"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "American (Traditional)"], ["location", "Ultar"], ["leader", "Windrunner"], ["created_at", "2021-03-16 21:12:13.637945"], ["updated_at", "2021-03-16 21:12:13.637945"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.3ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Bakery"], ["location", "Noshaq"], ["leader", "Dustbringer"], ["created_at", "2021-03-16 21:12:13.641478"], ["updated_at", "2021-03-16 21:12:13.641478"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Vietnamese"], ["location", "Ismoil Somoni Peak"], ["leader", "Truthwatcher"], ["created_at", "2021-03-16 21:12:13.645248"], ["updated_at", "2021-03-16 21:12:13.645248"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.4ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Ethiopean"], ["location", "Muztagh Tower"], ["leader", "Truthwatcher"], ["created_at", "2021-03-16 21:12:13.648434"], ["updated_at", "2021-03-16 21:12:13.648434"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Indian"], ["location", "Chamlang"], ["leader", "Stoneward"], ["created_at", "2021-03-16 21:12:13.651660"], ["updated_at", "2021-03-16 21:12:13.651660"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "American (Traditional)"], ["location", "Mount Everest"], ["leader", "Dustbringer"], ["created_at", "2021-03-16 21:12:13.654535"], ["updated_at", "2021-03-16 21:12:13.654535"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTrip Create (0.2ms)[0m  [1m[32mINSERT INTO "trips" ("name", "location", "leader", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "German"], ["location", "Lupghar Sar"], ["leader", "Lightweaver"], ["created_at", "2021-03-16 21:12:13.657570"], ["updated_at", "2021-03-16 21:12:13.657570"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips" LIMIT $1[0m  [["LIMIT", 11]]
