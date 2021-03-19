@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      resources :user_trips
+      resources :participants
     end
+  end
+  namespace :api do
+    namespace :v1 do
+        end
   end
   namespace :api do
     namespace :v1 do

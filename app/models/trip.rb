@@ -1,3 +1,4 @@
 class Trip < ApplicationRecord
-    has_many :users, through: :user_trips
+    belongs_to :user
+    has_many :users, through: :participants
 end

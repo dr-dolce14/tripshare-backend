@@ -10,26 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_19_144252) do
+ActiveRecord::Schema.define(version: 2021_03_19_205606) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "trips", force: :cascade do |t|
-    t.string "name"
-    t.string "location"
-    t.string "leader"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "user_trips", force: :cascade do |t|
+  create_table "participants", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "trip_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["trip_id"], name: "index_user_trips_on_trip_id"
-    t.index ["user_id"], name: "index_user_trips_on_user_id"
+    t.index ["trip_id"], name: "index_participants_on_trip_id"
+    t.index ["user_id"], name: "index_participants_on_user_id"
+  end
+
+  create_table "trips", force: :cascade do |t|
+    t.string "name"
+    t.string "location"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -42,6 +42,6 @@ ActiveRecord::Schema.define(version: 2021_03_19_144252) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "user_trips", "trips"
-  add_foreign_key "user_trips", "users"
+  add_foreign_key "participants", "trips"
+  add_foreign_key "participants", "users"
 end

@@ -1,6 +1,6 @@
-class CreateUserTrips < ActiveRecord::Migration[6.0]
+class CreateParticipants < ActiveRecord::Migration[6.0]
   def change
-    create_table :user_trips do |t|
+    create_table :participants do |t|
       t.belongs_to :user, null: false, foreign_key: true
       t.belongs_to :trip, null: false, foreign_key: true
 
