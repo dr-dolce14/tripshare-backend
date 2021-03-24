@@ -40,7 +40,7 @@ class Api::V1::TripsController < ApplicationController
     private
 
     def trip_params
-        params.require(:trip).permit(:name, :location, :leader)
+        params.require(:trip).permit(:name, :location, :user_id)
     end
 
 

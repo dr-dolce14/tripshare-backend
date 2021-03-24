@@ -6,8 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Trip.delete_all
+10.times do
+    User.create(name: Faker::Cosmere.knight_radiant, pic: Faker::LoremFlickr.image, username: Faker::Creature::Dog.meme_phrase, password_digest: Faker::TvShows::TheExpanse.ship , email: Faker::Internet.free_email)
+end
 
 10.times do 
- Trip.create(name: Faker::Restaurant.type, location: Faker::Mountain.name, leader: Faker::Cosmere.knight_radiant)
+ Trip.create(name: Faker::TvShows::Buffy.quote, location: Faker::Movies::Hobbit.location, user_id: User.all.sample.id)
+end
+
+10.times do
+    Participant.create(user_id: User.all.sample.id, trip_id: Trip.all.sample.id)
 end
