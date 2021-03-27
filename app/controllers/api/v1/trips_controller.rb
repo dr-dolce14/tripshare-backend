@@ -2,7 +2,7 @@ class Api::V1::TripsController < ApplicationController
 
     def index
         @trips = Trip.all
-        render json: @trips, include: [:user, :participant]
+        render json: @trips, include: [:user, :users]
     end
 
     def show

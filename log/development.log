@@ -1707,3 +1707,95 @@ Processing by Api::V1::TripsController#index as HTML
 Completed 200 OK in 28ms (Views: 21.5ms | ActiveRecord: 3.6ms | Allocations: 7651)
 
 
+Started GET "/api/v1/trips" for ::1 at 2021-03-27 11:38:25 -0400
+Processing by Api::V1::TripsController#index as HTML
+  [1m[36mTrip Load (0.6ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/controllers/api/v1/trips_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (12.43ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 5.9ms | Allocations: 9234)
+
+
+  
+NoMethodError (undefined method `participants' for #<Trip:0x00007f94ab26bbb8>
+Did you mean?  partial_writes):
+  
+app/controllers/api/v1/trips_controller.rb:5:in `index'
+Started GET "/api/v1/trips" for ::1 at 2021-03-27 11:38:45 -0400
+Processing by Api::V1::TripsController#index as HTML
+  [1m[36mTrip Load (0.4ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/controllers/api/v1/trips_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.42ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 3.8ms | Allocations: 9174)
+
+
+  
+NoMethodError (undefined method `participants' for #<Trip:0x00007f94af846ac0>
+Did you mean?  partial_writes):
+  
+app/controllers/api/v1/trips_controller.rb:5:in `index'
+Started GET "/api/v1/trips" for ::1 at 2021-03-27 11:39:02 -0400
+Processing by Api::V1::TripsController#index as HTML
+  [1m[36mTrip Load (0.4ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/controllers/api/v1/trips_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.87ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 3.2ms | Allocations: 9200)
+
+
+  
+NoMethodError (undefined method `participant' for #<Trip:0x00007f94ab290f08>
+Did you mean?  partial_writes):
+  
+app/controllers/api/v1/trips_controller.rb:5:in `index'
+Started GET "/api/v1/trips" for ::1 at 2021-03-27 11:40:01 -0400
+Processing by Api::V1::TripsController#index as HTML
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/controllers/api/v1/trips_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.06ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 3.4ms | Allocations: 9196)
+
+
+  
+NoMethodError (undefined method `participant' for #<Trip:0x00007f94af46ef60>
+Did you mean?  partial_writes):
+  
+app/controllers/api/v1/trips_controller.rb:5:in `index'
+Started GET "/api/v1/trips" for ::1 at 2021-03-27 11:40:21 -0400
+Processing by Api::V1::TripsController#index as HTML
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/controllers/api/v1/trips_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.69ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 5.0ms | Allocations: 10278)
+
+
+  
+ActiveRecord::HasManyThroughAssociationNotFoundError (Could not find the association :participants in model Trip):
+  
+app/controllers/api/v1/trips_controller.rb:5:in `index'
+Started GET "/api/v1/trips" for ::1 at 2021-03-27 11:41:59 -0400
+Processing by Api::V1::TripsController#index as HTML
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  ↳ app/controllers/api/v1/trips_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "participants" ON "users"."id" = "participants"."user_id" WHERE "participants"."trip_id" = $1[0m  [["trip_id", 61]]
+[active_model_serializers]   ↳ app/controllers/api/v1/trips_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "participants" ON "users"."id" = "participants"."user_id" WHERE "participants"."trip_id" = $1[0m  [["trip_id", 62]]
+[active_model_serializers]   ↳ app/controllers/api/v1/trips_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "participants" ON "users"."id" = "participants"."user_id" WHERE "participants"."trip_id" = $1[0m  [["trip_id", 63]]
+[active_model_serializers]   ↳ app/controllers/api/v1/trips_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "participants" ON "users"."id" = "participants"."user_id" WHERE "participants"."trip_id" = $1[0m  [["trip_id", 64]]
+[active_model_serializers]   ↳ app/controllers/api/v1/trips_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "participants" ON "users"."id" = "participants"."user_id" WHERE "participants"."trip_id" = $1[0m  [["trip_id", 65]]
+[active_model_serializers]   ↳ app/controllers/api/v1/trips_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "participants" ON "users"."id" = "participants"."user_id" WHERE "participants"."trip_id" = $1[0m  [["trip_id", 66]]
+[active_model_serializers]   ↳ app/controllers/api/v1/trips_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "participants" ON "users"."id" = "participants"."user_id" WHERE "participants"."trip_id" = $1[0m  [["trip_id", 67]]
+[active_model_serializers]   ↳ app/controllers/api/v1/trips_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "participants" ON "users"."id" = "participants"."user_id" WHERE "participants"."trip_id" = $1[0m  [["trip_id", 68]]
+[active_model_serializers]   ↳ app/controllers/api/v1/trips_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "participants" ON "users"."id" = "participants"."user_id" WHERE "participants"."trip_id" = $1[0m  [["trip_id", 69]]
+[active_model_serializers]   ↳ app/controllers/api/v1/trips_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "participants" ON "users"."id" = "participants"."user_id" WHERE "participants"."trip_id" = $1[0m  [["trip_id", 70]]
+[active_model_serializers]   ↳ app/controllers/api/v1/trips_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (46.22ms)
+Completed 200 OK in 60ms (Views: 42.0ms | ActiveRecord: 13.8ms | Allocations: 32427)
+
+
