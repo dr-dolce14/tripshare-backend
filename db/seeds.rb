@@ -11,7 +11,7 @@
 end
 
 10.times do 
- Trip.create(name: Faker::TvShows::Buffy.quote, location: Faker::Movies::Hobbit.location, user_id: User.all.sample.id)
+ Trip.create(name: Faker::Hipster.sentence(word_count: 3), location: Faker::Movies::Hobbit.location, user_id: User.all.sample.id)
 end
 
 10.times do
